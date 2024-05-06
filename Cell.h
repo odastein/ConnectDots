@@ -8,6 +8,33 @@
 
 
 class Cell {
+    int getxCoordinate() {
+        return xCoordinate;
+    }
+
+    int getyCoordinate() {
+        return yCoordinate;
+    }
+
+    [] getCoordinates () {
+        return [xCoordinate, yCoordinate];
+    }
+
+    bool getHasDot() {
+        return hasDot;
+    }
+
+    bool getHasLine() {
+        return hasLine;
+    }
+
+    [] getNeighbours() {
+        return neighbours;
+    }
+
+    void setHasDot(bool b) {}
+
+    void setHasLine(bool b) {}
 
 };
 

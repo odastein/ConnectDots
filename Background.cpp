@@ -23,7 +23,9 @@ for example 4x4:
     string cell;
     for(int i, i < size, i++) {
         for (int j, j < size, j++) {
-            string cell = new String;
+            new Cell cell;
+			cell.setxCoordinate(i);
+			cell.setyCoordinate(j);
         }
     }
 
