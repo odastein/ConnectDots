@@ -4,7 +4,9 @@
 
 #include <iostream>
 #include <string.h>
-using namespace std;
+#include <list>
+
+list<Cell> cells = new list<Cell>;
 
 void makeBoard(int size){
 /*
@@ -20,14 +22,14 @@ for example 4x4:
 ---------
 */
 
-    string cell;
-    for(int i, i < size, i++) {
-        for (int j, j < size, j++) {
-            new Cell cell;
+	for(int i, i < size, i++) {
+    	for (int j, j < size, j++) {
+       	new Cell cell;
 			cell.setxCoordinate(i);
-			cell.setyCoordinate(j);
-        }
-    }
+			cell.setyCoordinate(j);'
+			cells.push_back(cell);
+    	}
+	}
 
 }
 
